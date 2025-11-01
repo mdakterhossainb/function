@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //1111111111111111
+            //         function sum(a, b) {
+            //     return a + b;
+            // }
+            // console.log(sum(11, 25));
+            //222222222
+            //             sum = (a, b) => {
+            //     return a + b;
+            // };
+            // console.log(sum(11, 25));
+            // function sum(a, b) {
+            //     return a + b;
+            // }
+            // console.log(sum(11, 25));
+            //3333333333333
+            //             (function sum(a, b) {
+            //     result = a + b;
+            //     console.log(result);
+            // })(5, 6);
+
+            // function sum(a, b) {
+            //     result = a + b;
+            //     console.log(result);
+            // }
+            // sum(5, 6);
+            // sum(51, 6);
+            // sum(5, 16);
+            // sum(5, 60);
+            // sum(5, 68);
+            //444444444444444444
+            //             sum = (a, b) => a + b;
+            // console.log(sum(22, 33));
+            //             // 55555555555555555555555555
+            //             const s = (a, b) => {
+            //     let total = a + b;
+            //     let result = total + 20;
+            //     return result;
+            // };
+            // console.log(s(3, 5));
+            //666666666666666666666666
+            //             function square(a) {
+            //     a = 5;
+            //     var result = a * a;
+            //     console.log("result = " + result);
+            // }
+            // square();
+            // // square(5);
+            // // square(54);
+            // // square(15);
+            // // square(1);
+            // // square(52);
+            //             // // square(5);
+            // 7777777777
+            // function square(a) {
+            //     a = 5;
+            //     var result = a * a;
+            //     console.log("result = " + result);
+            // }
+            // square();
+            // square(5);
+            // square(54);
+            // square(15);
+            // square(1);
+            // square(52);
+            // square(5);
+            //             888888888888
+            //             function sum(money) {
+            //     fish = 100;
+            //     quantity = money / fish;
+            //     return quantity;
+            // }
+            // result = sum(1000);
+            // console.log(result);
+            //             9999999
+            //             const bus = {
+            //     name: "alom",
+            //     color: "blue",
+            //     price: 3333333,
+            // };
+            // function name(params) {
+            //     console.log(`car name is ${params.name} and this price is : ${params.price}`);
+            // }
+            // name(bus);
+            //             1000000000000
+            //             function name(params) {
+            //     console.log(`bus name ${params.name} and bus price: ${params.price}`);
+            // }
+            // name({
+            //     name: "bus",
+            //     price: 23312,
+            // });
+            //             111111111111111111
+            //             Array = [22, 554, 5874, 5241, 47, 6666666666];
+            // function name(params) {
+            //     console.log(`this is third array : ${params[3]} and this is last array : ${params[5]}`);
+            // }
+            // name(Array);
+            //             122222222222
+            //             function name(params) {
+            //     console.log(`this is third array : ${params[3]} and this is last array : ${params[5]}`);
+            // }
+            // name([22, 554, 5874, 5241, 47, 6666666666]);
+            // 13333333333333;
+            // function name(...params) {
+            //     return params;
+            // }
+            // console.log(name(100, 2222, 33, 544, 45478));
+            // 14444444444;
+            //this is rest operator
+            // function name(num1, num2, num3, ...params) {
+            //     return params;
+            // }
+            // console.log(name(100, 2222, 33, 544, 45, 4, 764, 54, 56, 8));
+            //             15555555555555555
+            //this is spread operator
+
+            //             Array1 = [1425, 54, 478, 65, 32, 48, 1415, 32, 12];
+            // Array2 = [Array1, 14, 25, 54, 478, 65, 32, 48, 1415, 32, 12];
+            // console.log(Array2);
+            //             155555555555;
+            //             Array1 = [1425, 54, 478, 65, 32, 48, 1415, 32, 12];
+            // Array2 = [...Array1, 14, 25, 54, 478, 65, 32, 48, 1415, 32, 12];
+            // console.log(Array2);
+            //             1666666666666666
+
+            //             Array1 = [1425, 54, 478, 65, 32, 48, 1415, 32, 12];
+            // Array2 = [14, 25, 54, 478, 65, 32, 48, 1415, 32, 12, ...Array1];
+            // console.log(Array2);
+            //             17777777777777
+            //             Array1 = [1425, 54, 478, 65, 32, 48, 1415, 32, 12];
+            // Array3 = [10000000000, 54, 478, 65, 32, 48, 1415, 32, 2000000000];
+            // Array2 = [...Array3, 14, 25, 54, 478, 65, 32, 48, 1415, 32, 12, ...Array1];
+            // console.log(Array2);
+            //             1888888
+            //             Array1 = [1425, 54, 478, 65];
+            // function sum(a1, a2, a3, a4) {
+            //     return a1 + a2 + a3 + a4;
+            // }
+            // console.log(sum(Array1, 10, 20));
+            //             199999999999
+            //             Array1 = [5, 4, 8, 6];
+            // function sum(a1, a2, a3, a4) {
+            //     return a1 + a2 + a3 + a4;
+            // }
+            // console.log(sum(...Array1));
+            //             2000000
+            //             Array1 = [5, 4, 8, 6, 1, 4, 55, 47];
+            // function sum(a1, a2, a3, a4) {
+            //     return a1 + a2 + a3 + a4;
+            // }
+            // console.log(sum(...Array1));
+            // 21111111111111
+            // Array1 = [5, 4, 8];
+            // function sum(a1, a2, a3, a4) {
+            //     return a1 + a2 + a3 + a4;
+            // }
+            // console.log(sum(...Array1));
+            //             2222222222222222222
+            //             Array1 = [5, 4, 8, 54, 6, 858, 21, 33, 6];
+
+            // console.log(Math.min(...Array1));
+            // console.log(Math.max(...Array1));
+            //             233333333333
+            //             Array1 = [5, 4, 8, 54, 6, 858, 21, 33, 6];
+
+            // console.log(...Array1);
+            //             23333333333333
+            //             const players = [
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "kamal",
+            // ];
+            // players.forEach((a) => {
+            //     console.log(a);
+            // });
+            //            aaaaaaaaaaaaaaaaa
+            //             const players = [
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "kamal",
+            // ];
+            // players.forEach(function (a) {
+            //     console.log(a);
+            // });
+            // //bbbbbbbbbbbbbbbbbbbbbb
+            // const players = [
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "jamal",
+            //     "akter",
+            //     "kamal",
+            // ];
+            // players.forEach(eee);
+            // function eee(a) {
+            //     console.log(a);
+            // }
+            // 244444444;
+            // const a = [2, 35, 1, 12, 6];
+            // a.forEach((ee) => {
+            //     console.log(ee + 2);
+            // });
+            // const numbers = [2, 35, 1, 12, 6];
+            // const result = numbers.map((number) => {
+            //     return number * 2;
+            // });
+            // console.log(result);
+            //             2555555555555555
+            //             const students = [
+            //     {name: "akter", age: 25, id: 202, class: "ten"},
+            //     {name: "akter", age: 25, id: 202, class: "ten"},
+            //     {name: "akter", age: 25, id: 202, class: "ten"},
+            //     {name: "akter", age: 25, id: 202, class: "ten"},
+            //     {name: "akter", age: 25, id: 202, class: "five"},
+            //     {name: "akter", age: 22, id: 202, class: "five"},
+            //     {name: "akter", age: 25, id: 202, class: "ten"},
+            //     {name: "abir", age: 25, id: 202, class: "ten"},
+            //     {name: "abir", age: 25, id: 202, class: "ten"},
+            //     {name: "kamal", age: 22, id: 202, class: "one"},
+            //     {name: "kamal", age: 25, id: 202, class: "one"},
+            // ];
+            // const best = students.filter((mumtaj) => mumtaj.age === 22);
+            // console.log(best);
+            //             2555555555555;
+            //             const sss = [654, 4, 65, 748, 9, 65432];
+            //             const rr = sss.reduce((a, b) => {
+            //                 return a + b;
+            //             });
+            //             console.log(rr);
+            //             26666666666666
+            //             const car = [
+            //     {items: "batary", price: 2325},
+            //     {items: "light", price: 2225},
+            //     {items: "batary", price: 25},
+            //     {items: "batary", price: 225},
+            //     {items: "batary", price: 2525},
+            //     {items: "sit", price: 25},
+            // ];
+
+            // const result = car.reduce((a, b) => {
+            //     return a + b.price;
+            // }, 0);
+            // console.log(result);
+            //             27777777777
+            //             const car = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            // const result = car.splice(3, 6);
+            // console.log(result);
+            // console.log(car);
+            //             2888888888888
+            //             let sum = 0;
+            // for (let i = 0; i <= 9; i++) {
+            //     console.log(sum);
+            //     sum = sum + i;
+            // }
+            // aaaaaaaaaaaaa
+            // let sum = 0;
+            // for (let i = 0; i <= 9; i++) {
+            //     sum = sum + i;
+
+            //     console.log(i + " this is sum " + sum);
+            // }
+            //             299999999999;
+            //             function name(a) {
+            //                 let sum = 0;
+            //                 for (let i = 0; i <= a; i++) {
+            //                     sum = sum + i;
+            //                     console.log(i + " this is sum " + sum);
+            //                 }
+            //             }
+            //             name(2);
+            //             aaaaaaaaaaaa;
+            //             function name(a) {
+            //                 let sum = 0;
+            //                 for (let i = 0; i <= a; i++) {
+            //                     sum = sum + i;
+            //                     console.log(i + " this is sum " + sum);
+            //                 }
+            //                 return sum;
+            //             }
+            //             const result = name(22);
+            //             console.log(result);
+
+            //             bbbbbbbbbbbbbbb
+            //             function name(a) {
+            //     let multi = 1;
+            //     for (let i = 1; i <= a; i++) {
+            //         multi = multi * i;
+            //         console.log(i + " this is multi " + multi);
+            //     }
+            //     return multi;
+            // }
+            // const result = name(7);
+            // console.log(result);
+            299999999;
+            function s() {
+                sum = 0;
+                for (let r = 0; r < arguments.length; r++) {
+                    sum = sum + arguments[r];
+                }
+                console.log(sum);
+            }
+            s(44, 3, 22, 11);
+        </script>
+    </body>
+</html>
